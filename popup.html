@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confidence Checker</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; width: 250px; }
+    button {
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    #yesBtn { background-color: #4CAF50; color: white; }
+    #noBtn { background-color: #f44336; color: white; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <!-- Page 1 -->
+  <div id="questionScreen">
+    <h3>Are you confident about this job?</h3>
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn"> No</button>
+    <p id="response"></p>
+  </div>
+
+  <!-- Page 2 -->
+  <div id="uploadScreen" class="hidden">
+    <h3>Upload your resume</h3>
+    <input type="file" id="resumeUpload" accept=".txt,.pdf">
+    <button id="goBtn">Go</button>
+    <p id="matchResult"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
