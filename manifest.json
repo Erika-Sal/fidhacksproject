@@ -2,10 +2,16 @@
     "manifest_version": 3,
     "name": "Confidence Checker",
     "version": "1.0",
-    "description": "Helps you gain confidence before applying to tech jobs",
+    "description": "Helps you reflect before applying to tech jobs",
     "action": {
       "default_popup": "popup.html"
     },
-    "permissions": ["activeTab"]
+    "permissions": [
+      "scripting",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "*://*/*"
+    ]
   }
   
