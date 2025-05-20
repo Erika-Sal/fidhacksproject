@@ -13,7 +13,7 @@ const CommunityPage = ({ onNavigateBack }) => {
         {
           name: "Fiona Green",
           imageUrl: "/izzie.jpg",
-          transcript: "I wish someone had reminded me that rejection isn't the end of the world. I almost didn't apply for my dream job because I was afraid of rejection. When I finally did, I actually got an interview and while I didn't get that specific position, the connections I made led to an even better opportunity a few months later. Just apply, just ask, just try - the worst they can say is no."
+          transcript: "I wish someone had reminded me that rejection isn&apos;t the end of the world. I almost didn&apos;t apply for my dream job because I was afraid of rejection. When I finally did, I actually got an interview and while I didn&apos;t get that specific position, the connections I made led to an even better opportunity a few months later. Just apply, just ask, just try - the worst they can say is no."
         },
         {
           name: "Lara Smith",
@@ -23,17 +23,17 @@ const CommunityPage = ({ onNavigateBack }) => {
         {
           name: "Samantha Brooke",
           imageUrl: "/girl2.png",
-          transcript: "That nobody is born knowing how to do this. Everyone who's good at anything started somewhere, and most likely they were terrible at first. I hesitated to start learning to code because I felt so overwhelmed, but once I started and gave myself permission to be a beginner, it got easier every day."
+          transcript: "That nobody is born knowing how to do this. Everyone who&apos;s good at anything started somewhere, and most likely they were terrible at first. I hesitated to start learning to code because I felt so overwhelmed, but once I started and gave myself permission to be a beginner, it got easier every day."
         },
         {
           name: "Jen Miller",
           imageUrl: "/girl3.png",
-          transcript: "I wish I had remembered that everyone feels like an impostor sometimes. When I was put forward for a promotion, I almost turned it down because I thought I wasn't ready. My mentor reminded me that the perfect moment never comes - we grow into roles by taking them. I accepted the promotion and it pushed me to develop skills I never would have otherwise."
+          transcript: "I wish I had remembered that everyone feels like an impostor sometimes. When I was put forward for a promotion, I almost turned it down because I thought I wasn&apos;t ready. My mentor reminded me that the perfect moment never comes - we grow into roles by taking them. I accepted the promotion and it pushed me to develop skills I never would have otherwise."
         },
         {
           name: "Tasha Williams",
           imageUrl: "/tasha.png",
-          transcript: "That it's okay to ask questions. I spent weeks struggling with a programming concept because I was afraid asking for help would make me look incompetent. When I finally reached out to a colleague, they solved my problem in five minutes and said they had the exact same issue when they started. Nobody expects you to know everything!"
+          transcript: "That it&apos;s okay to ask questions. I spent weeks struggling with a programming concept because I was afraid asking for help would make me look incompetent. When I finally reached out to a colleague, they solved my problem in five minutes and said they had the exact same issue when they started. Nobody expects you to know everything!"
         }
       ]
     },
@@ -43,7 +43,7 @@ const CommunityPage = ({ onNavigateBack }) => {
         {
           name: "Amelia Roberts",
           imageUrl: "/girl5.png",
-          transcript: "I failed my certification exam the first time by just two points. It was devastating because I'd studied for months. After allowing myself one day to feel bad about it, I signed up to take it again, identified my weak areas, and focused my studying. I passed with flying colors the second time, and the experience taught me more about resilience than any success ever could."
+          transcript: "I failed my certification exam the first time by just two points. It was devastating because I&apos;d studied for months. After allowing myself one day to feel bad about it, I signed up to take it again, identified my weak areas, and focused my studying. I passed with flying colors the second time, and the experience taught me more about resilience than any success ever could."
         },
         {
           name: "Ananya Gupta",
@@ -53,17 +53,17 @@ const CommunityPage = ({ onNavigateBack }) => {
         {
           name: "Anabelle White",
           imageUrl: "/girl8.png",
-          transcript: "I bombed an important client presentation so badly that my boss had to step in and salvage it. I was mortified and sure I'd be fired. Instead of giving up, I asked for honest feedback, worked with a speaking coach, and practiced relentlessly. Six months later, I led our biggest client pitch of the year - and we won the account. Sometimes you need to fail publicly to find the motivation to truly improve."
+          transcript: "I bombed an important client presentation so badly that my boss had to step in and salvage it. I was mortified and sure I&apos;d be fired. Instead of giving up, I asked for honest feedback, worked with a speaking coach, and practiced relentlessly. Six months later, I led our biggest client pitch of the year - and we won the account. Sometimes you need to fail publicly to find the motivation to truly improve."
         },
         {
           name: "Maya Johnson",
           imageUrl: "/girl9.png",
-          transcript: "I applied for a prestigious fellowship three years in a row before I got it. The first rejection crushed me, the second one stung, but by the third year, I'd learned so much from the feedback that my application was completely different. Those 'failures' forced me to clarify my research goals and improve my writing in ways that success never would have."
+          transcript: "I applied for a prestigious fellowship three years in a row before I got it. The first rejection crushed me, the second one stung, but by the third year, I&apos;d learned so much from the feedback that my application was completely different. Those &apos;failures&apos; forced me to clarify my research goals and improve my writing in ways that success never would have."
         },
         {
           name: "Zoe Chen",
           imageUrl: "/girl6.png",
-          transcript: "My entire product launch failed because I didn't do enough user testing. We had spent six months building something nobody actually wanted. Instead of abandoning the project, I went back to basics - conducted proper user interviews, identified the real pain points, and pivoted. The new version was a hit, and I never would have found that solution without the initial failure."
+          transcript: "My entire product launch failed because I didn&apos;t do enough user testing. We had spent six months building something nobody actually wanted. Instead of abandoning the project, I went back to basics - conducted proper user interviews, identified the real pain points, and pivoted. The new version was a hit, and I never would have found that solution without the initial failure."
         }
       ]
     }
@@ -113,7 +113,7 @@ const CommunityPage = ({ onNavigateBack }) => {
        
         <div className="flex justify-between items-center mb-12">
           <h1 className="text-5xl font-bold">Community</h1>
-          <button className="bg-yellow-100 border border-yellow-200 px-5 py-2 rounded-full font-medium">
+          <button className="bg-yellow-100 border border-yellow-200 px-5 py-2 rounded-full font-medium cursor-pointer hover:bg-yellow-200 transition-colors">
             Give Advice
           </button>
         </div>
@@ -132,7 +132,7 @@ const CommunityPage = ({ onNavigateBack }) => {
                
                 {showLeftArrow(promptIndex) && (
                   <button 
-                    className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition-all"
+                    className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition-all cursor-pointer"
                     onClick={() => navigateEntries(promptIndex, 'left')}
                   >
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,7 +168,7 @@ const CommunityPage = ({ onNavigateBack }) => {
                         
                         
                         <button 
-                          className="bg-purple-300 rounded-full p-2 mb-3 hover:bg-purple-400 transition-colors"
+                          className="bg-purple-300 rounded-full p-2 mb-3 hover:bg-purple-400 transition-colors cursor-pointer"
                           onClick={() => handlePlayClick(promptIndex, entryIndex)}
                         >
                           <div className="w-10 h-10 flex items-center justify-center">
@@ -191,7 +191,7 @@ const CommunityPage = ({ onNavigateBack }) => {
                
                 {showRightArrow(promptIndex) && (
                   <button 
-                    className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition-all"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition-all cursor-pointer"
                     onClick={() => navigateEntries(promptIndex, 'right')}
                   >
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,9 +206,10 @@ const CommunityPage = ({ onNavigateBack }) => {
         
      
         <button 
-          className="mt-12 text-gray-500 hover:text-gray-700 flex items-center"
+          className="mt-12 text-gray-500 hover:text-gray-700 flex items-center cursor-pointer"
           onClick={onNavigateBack}
         >
+          <span className="mr-1">←</span> Back to Home
         </button>
       </div>
       
@@ -224,7 +225,7 @@ const CommunityPage = ({ onNavigateBack }) => {
                 {communityPosts[selectedEntry.promptIndex].entries[selectedEntry.entryIndex].name}
               </h3>
               <button 
-                className="text-gray-500 hover:text-gray-700"
+                className="text-gray-500 hover:text-gray-700 cursor-pointer"
                 onClick={handleCloseTranscript}
               >
                 ✕
@@ -238,7 +239,7 @@ const CommunityPage = ({ onNavigateBack }) => {
             </p>
             <div className="flex justify-end">
               <button 
-                className="bg-purple-300 px-4 py-2 rounded-full"
+                className="bg-purple-300 px-4 py-2 rounded-full cursor-pointer hover:bg-purple-400 transition-colors"
                 onClick={handleCloseTranscript}
               >
                 Close

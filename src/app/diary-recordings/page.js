@@ -107,7 +107,7 @@ const DiaryEntryPage = ({ onNavigateBack }) => {
           <div className="w-full max-w-2xl border border-gray-800 rounded-lg p-10 flex flex-col items-center">
             
             <h1 className="text-4xl font-bold text-center mb-8 text-purple-600">
-              Today's Prompt
+              Today&apos;s Prompt
             </h1>
             
             
@@ -126,7 +126,7 @@ const DiaryEntryPage = ({ onNavigateBack }) => {
                  
                   <button 
                     className={`w-24 h-24 rounded-full ${isRecording ? 'bg-red-400' : 'bg-purple-300'} 
-                      flex items-center justify-center mb-8 focus:outline-none transition-colors`}
+                      flex items-center justify-center mb-8 focus:outline-none transition-colors cursor-pointer`}
                     onClick={handleRecordButtonClick}
                     disabled={recordingComplete}
                   >
@@ -164,13 +164,13 @@ const DiaryEntryPage = ({ onNavigateBack }) => {
                 {recordingComplete && (
                   <div className="flex gap-4">
                     <button 
-                      className="bg-purple-300 px-8 py-3 rounded-full text-xl font-medium"
+                      className="bg-purple-300 px-8 py-3 rounded-full text-xl font-medium cursor-pointer hover:bg-purple-400 transition-colors"
                       onClick={handleSubmitClick}
                     >
                       Save Entry
                     </button>
                     <button 
-                      className="border-2 border-purple-300 px-8 py-3 rounded-full text-xl font-medium"
+                      className="border-2 border-purple-300 px-8 py-3 rounded-full text-xl font-medium cursor-pointer hover:bg-purple-200 transition-colors"
                       onClick={handleRedoClick}
                     >
                       Redo
@@ -183,7 +183,7 @@ const DiaryEntryPage = ({ onNavigateBack }) => {
           
           
           <button 
-            className="mt-8 text-gray-500 hover:text-gray-700 flex items-center"
+            className="mt-8 text-gray-500 hover:text-gray-700 flex items-center cursor-pointer"
             onClick={onNavigateBack}
           >
             <span className="mr-1">←</span> Back to Home

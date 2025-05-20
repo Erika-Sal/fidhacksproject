@@ -17,17 +17,17 @@ const HomePage = () => {
       name: "Shreya Rastogi",
       imageUrl: "/shreya.JPEG",
       audioUrl: "/shreyaSound.m4a", 
-      transcript: "When I was starting out, I kept thinking I needed to know every programming language perfectly. But, tech roles need people who can learn and adapt new skills quickly. So, it is important to build a strong foundation with the basics, build some projects. And then, just apply! Don't let the fear of not knowing everything hold you back."
+      transcript: "When I was starting out, I kept thinking I needed to know every programming language perfectly. But, tech roles need people who can learn and adapt new skills quickly. So, it is important to build a strong foundation with the basics, build some projects. And then, just apply! Don&apos;t let the fear of not knowing everything hold you back."
     },
     {
       name: "Lakshmi Prakash",
       imageUrl: "/lakshmi.JPG",
-      transcript: "I almost didn't apply to my current role because the description seemed intimidating. Remember that job descriptions are wish lists, not exact requirements. Women often feel they need to be 100% qualified, while men apply at around 60%. Take that same confidence with you, and remember that diverse perspectives are valuable in tech."
+      transcript: "I almost didn&apos;t apply to my current role because the description seemed intimidating. Remember that job descriptions are wish lists, not exact requirements. Women often feel they need to be 100% qualified, while men apply at around 60%. Take that same confidence with you, and remember that diverse perspectives are valuable in tech."
     },
     {
       name: "Maegan McCarthy",
       imageUrl: "/maegan.png",
-      transcript: "The tech interview process can feel designed to make you fail, but it is really about seeing how you think. Practice talking through problems out loud, even if you don't immediately know the answer. And remember to negotiate your offer! I didn't negotiate my first job and later learned my male peers did. Know your worth."
+      transcript: "The tech interview process can feel designed to make you fail, but it is really about seeing how you think. Practice talking through problems out loud, even if you don&apos;t immediately know the answer. And remember to negotiate your offer! I didn&apos;t negotiate my first job and later learned my male peers did. Know your worth."
     }
   ];
 
@@ -82,7 +82,7 @@ const HomePage = () => {
       <div className="container mx-auto px-6 pt-16 pb-8 flex-grow">
        
         <h1 className="text-4xl font-bold mb-14 text-center">
-          Welcome to the NextHire's Home Base!
+          Welcome to the NextHire&apos;s Home Base!
         </h1>
        
         <div className="flex flex-col items-center mb-10">
@@ -90,7 +90,7 @@ const HomePage = () => {
             href="/diary-recordings" 
             className="bg-purple-300 px-12 py-5 rounded-full text-2xl font-medium mb-4"
           >
-            Complete Today's Diary Entry
+            Complete Today&apos;s Diary Entry
           </Link>
         
           <div className="h-1 bg-purple-300 w-64 md:w-96 rounded-full mt-3"></div>
@@ -129,7 +129,7 @@ const HomePage = () => {
                 
               
                 <button 
-                  className="bg-purple-300 rounded-full p-2 mb-4"
+                  className="bg-purple-300 rounded-full p-2 mb-4 cursor-pointer hover:bg-purple-400 transition-colors"
                   onClick={() => handlePlayClick(index)}
                 >
                   <div className="w-10 h-10 flex items-center justify-center">
@@ -173,7 +173,7 @@ const HomePage = () => {
               <p className="mb-4">{adviceEntries[selectedTranscript].transcript}</p>
               <div className="flex justify-between">
                 <button 
-                  className="bg-purple-300 px-4 py-2 rounded-full flex items-center"
+                  className="bg-purple-300 px-4 py-2 rounded-full flex items-center cursor-pointer"
                   onClick={() => {
                   
                     if (selectedTranscript === 0) {
@@ -191,7 +191,7 @@ const HomePage = () => {
                   {isPlaying ? "Pause Audio" : "Play Audio"}
                 </button>
                 <button 
-                  className="bg-purple-300 px-4 py-2 rounded-full"
+                  className="bg-purple-300 px-4 py-2 rounded-full cursor-pointer"
                   onClick={handleCloseTranscript}
                 >
                   Close

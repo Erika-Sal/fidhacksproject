@@ -92,7 +92,7 @@ const DiaryEntriesPage = () => {
        
         <div className="flex items-center justify-center mb-16">
           <button 
-            className={`w-10 h-10 flex items-center justify-center mr-4 ${!hasPrevious ? 'text-gray-300' : 'text-gray-700 hover:text-gray-900'}`}
+            className={`w-10 h-10 flex items-center justify-center mr-4 cursor-pointer ${!hasPrevious ? 'text-gray-300' : 'text-gray-700 hover:text-gray-900'}`}
             onClick={navigatePrevious}
             disabled={!hasPrevious}
           >
@@ -105,7 +105,7 @@ const DiaryEntriesPage = () => {
             {dates.slice(visibleDateIndex, visibleDateIndex + 4).map((date) => (
               <button
                 key={date.id}
-                className={`w-24 h-32 rounded-lg flex flex-col items-center justify-center transition-all ${
+                className={`w-24 h-32 rounded-lg flex flex-col items-center justify-center transition-all cursor-pointer ${
                   selectedDate && selectedDate.id === date.id
                     ? 'bg-purple-400 text-white shadow-md scale-105'
                     : 'bg-purple-300 hover:bg-purple-400 hover:text-white'
@@ -119,7 +119,7 @@ const DiaryEntriesPage = () => {
           </div>
           
           <button 
-            className={`w-10 h-10 flex items-center justify-center ml-4 ${!hasNext ? 'text-gray-300' : 'text-gray-700 hover:text-gray-900'}`}
+            className={`w-10 h-10 flex items-center justify-center ml-4 cursor-pointer ${!hasNext ? 'text-gray-300' : 'text-gray-700 hover:text-gray-900'}`}
             onClick={navigateNext}
             disabled={!hasNext}
           >
@@ -158,7 +158,7 @@ const DiaryEntriesPage = () => {
               
               <div className="flex justify-end">
                 <button 
-                  className="bg-purple-300 px-6 py-2 rounded-full hover:bg-purple-400 transition-colors"
+                  className="bg-purple-300 px-6 py-2 rounded-full hover:bg-purple-400 transition-colors cursor-pointer"
                   onClick={handleDownloadAudio}
                 >
                   Download Audio
@@ -181,9 +181,9 @@ const DiaryEntriesPage = () => {
                     <div className="flex justify-center">
                       <Link 
                         href="/diaryRecording" 
-                        className="bg-purple-500 text-white px-6 py-3 rounded-full hover:bg-purple-600 transition-colors inline-block"
+                        className="bg-purple-500 text-white px-6 py-3 rounded-full hover:bg-purple-600 transition-colors inline-block cursor-pointer"
                       >
-                        Record Today's Entry
+                        Record Today&apos;s Entry
                       </Link>
                     </div>
                   </div>
@@ -196,7 +196,7 @@ const DiaryEntriesPage = () => {
         )}
         
         <div className="mt-12 text-center">
-          <Link href="/home" className="text-purple-600 hover:text-purple-800">
+          <Link href="/home" className="text-purple-600 hover:text-purple-800 cursor-pointer">
             ← Back to Home
           </Link>
         </div>
